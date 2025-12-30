@@ -1,0 +1,105 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:system-ui,sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#ffffff;
+}
+.CalApp{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.calculator{
+   background:#ffffff;
+  padding:25px;
+  border-radius:20px;
+  box-shadow:0 0 30px #00f2ff;
+}
+
+.display{
+  height:70px;
+  width:260px;
+  background:#020212;
+  color:#00f2ff;
+  font-size:32px;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  padding:15px;
+  border-radius:12px;
+  margin-bottom:20px;
+  box-shadow:inset 0 0 15px #00f2ff;
+}
+
+.buttons{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:12px;
+}
+
+button{
+  height:55px;
+  border:none;
+  border-radius:12px;
+  background:#0f0f2d;
+  color:#00f2ff;
+  font-size:20px;
+  cursor:pointer;
+  box-shadow:0 0 10px #00f2ff;
+  transition:0.2s;
+}
+
+button:hover{
+  box-shadow:0 0 20px #00f2ff;
+}
+
+.op{
+  color:#ff5ef7;
+  box-shadow:0 0 10px #ff5ef7;
+}
+
+.equal{
+  background:#00f2ff;
+  color:#000;
+  box-shadow:0 0 20px #00f2ff;
+}
+
+.zero{
+  grid-column:span 2;
+}
+.credit-strip{
+  margin-top:50px;
+  width: 1270px;;
+  background:#0f172a;
+  color:#e5e7eb;
+  font-size:13px;
+  letter-spacing:1px;
+  padding:10px 0;
+  text-align:center;
+  border-radius:8px;
+  box-shadow:0 0 12px rgba(0,0,0,0.2);
+}
+.credit-text{
+  white-space:nowrap;
+  color:#e5e7eb;
+  font-size:14px;
+  letter-spacing:1px;
+  animation: scrollText 15s linear infinite;
+}
+@keyframes scrollText{
+  from{
+    transform:translateX(100%);
+  }
+  to{
+    transform:translateX(-100%);
+  }
+}
